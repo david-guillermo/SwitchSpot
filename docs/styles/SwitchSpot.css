@@ -2,12 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #3d3d3db9;
+    background-color: #b6b6b6f3;
+    position: relative
 }
 
+
+/* barra de navegacion */
 nav {
-    background-color: #ffffff80;
-    color: white;
+    background-color: #41414146;
+    backdrop-filter: blur(8px);
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +20,7 @@ nav {
     width: 94%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     border-radius: 15px;
 }
 
@@ -26,7 +30,7 @@ nav .logo {
 }
 
 nav .logo a {
-    color: rgb(36, 36, 36);
+    color: rgb(207, 207, 207);
     text-decoration: none;
 }
 
@@ -42,7 +46,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(44, 44, 44);       
+    color: rgb(255, 255, 255);       
     text-decoration: none;
 }
 
@@ -52,11 +56,14 @@ section {
     margin-top: 4em;
 } 
 
+/* titulos de pag 
+(Productos, Contacto , creditos de desarrollador)*/
 #home {
     background-color: #1a1e29;
     color: #cccccc;
-    height: 600px;
-}
+    height: 700px;
+    clip-path: polygon(0 0, 100% 0, 100% 63%, 0 81%);
+
 .Bienvenido{
     color: rgb(0, 255, 255);
     font-size: 60px;
@@ -67,17 +74,17 @@ section {
     color: #cccccc;
     height: 600px;
 }
-.productos{
+.productos {
     color: rgb(0, 255, 255);
     font-size: 60px;
 }
 
-#contacto {
+#contactos {
     background-color: #01c38e;
     color: #272727;
     height: 600px;
 }
-.Contacto{
+.contact {
     color: rgb(255, 255, 255);
     font-size: 60px;
 }
@@ -87,7 +94,58 @@ section {
     color: #272727;
     height: 200px;
 }
-.creditos-de-desarrollador{
+.creditos-de-desarrolladorr {
     color: rgb(43, 43, 43);
     font-size: 40px;
+
+}
+
+
+
+/* call to action */
+#btnn{
+    position: absolute;
+    margin: 110px;
+}
+
+.btnn {
+    padding: 1.1em 2em;
+    background: none;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #13144d;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #01c38e;
+}
+
+.btnn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #06c290;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+
+.btnn:hover {
+    background-color: #6af15c;
+    color: #1b1b1b;
+    box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btnn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+
+.btnn:active {
+    transform: scale(0.9);
+}
 }

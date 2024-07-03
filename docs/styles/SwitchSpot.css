@@ -6,18 +6,18 @@ body {
 }
 
 nav {
-    background-color: #e4e4e480;
+    background-color: #ffffff80;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
     position: fixed;
-    width: 95%;
+    width: 94%;
     top: 0;
     left: 0;
     z-index: 1000;
-
+    border-radius: 15px;
 }
 
 nav .logo {
@@ -42,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(44, 44, 44);
+    color: rgb(44, 44, 44);       
     text-decoration: none;
 }
 
@@ -50,23 +50,26 @@ section {
     padding: 2em;
     text-align: center;
     margin-top: 4em;
-}
+} 
 
 #home {
     background-color: #1a1e29;
     color: #cccccc;
     height: 600px;
 }
-#Bienvenido{
-    color: aqua;
+.Bienvenido{
+    color: rgb(0, 255, 255);
     font-size: 60px;
 }
-
 
 #productos {
     background-color: #132d46;
     color: #cccccc;
     height: 600px;
+}
+.productos{
+    color: rgb(0, 255, 255);
+    font-size: 60px;
 }
 
 #contacto {
@@ -74,9 +77,17 @@ section {
     color: #272727;
     height: 600px;
 }
+.Contacto{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+}
 
 #creditos {
     background-color: #ffffff;
     color: #272727;
     height: 200px;
+}
+.creditos-de-desarrollador{
+    color: rgb(43, 43, 43);
+    font-size: 40px;
 }

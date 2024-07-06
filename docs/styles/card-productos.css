@@ -41,7 +41,7 @@
 
 /*Text*/
 .text-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
@@ -145,7 +145,7 @@
 
 /*Text*/
 .text-title {
-    font-size: 1rem;
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -197,6 +197,7 @@
 
 /*Text*/
 .text-title {
+    margin-top: 12px;
     font-size: 1.3rem;
     font-weight: 700;
 }
@@ -249,7 +250,7 @@
 
 /*Text*/
 .text-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -316,5 +317,4 @@
 .Teclado6:hover .card-description {
     transform: translateY(100%);
 }
-
 

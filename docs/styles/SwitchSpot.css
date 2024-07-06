@@ -72,19 +72,29 @@ body {
 #contenedorHome {
     background-color: #0d1321;
     color: #cccccc;
-    width: 100%;
+    width: 110%;
     height: 700px;
     clip-path: polygon(0 0, 100% 0, 100% 63%, 0 81%);
 
     .tituloHome{
         color: rgb(0, 255, 255);
         font-size: 40px;
-    }
+}
+
+#contenedorImagendelinicio{
+    display: flex;
+    position: absolute;
+    margin-top: -15%;
+    margin-left: -10%;
+}
+
 
 /* call to action */
 #botonIniciarsesion{
     position: absolute;
-    margin: 110px;
+    margin: 200px;
+    margin-top: 25%;
+    margin-left: 15%;
 }
     .botonIniciarsesion {
         padding: 1.1em 2em;
@@ -198,4 +208,6 @@ body {
         font-size: 6¿50px;
     }
 }
+
+
 

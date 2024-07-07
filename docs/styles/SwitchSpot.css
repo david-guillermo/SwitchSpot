@@ -133,16 +133,16 @@ body {
         transform: scale(0.9);
     }
 }
-#contenedorProductos {
+#contenedorProductos{
     background-color: #132d46;
     color: rgb(0, 255, 255);
     font-size: 15px;
     height: 800px;
     width: 100%;
 
-    #productosTitulo {
-        color: #cccccc;
-        font-size: 50px;
+    .productos-position{
+        margin: 10%;
+        display: flex;
     }
 
     .botonProductos {
@@ -184,6 +184,8 @@ body {
         transform: scale(0.9);
     }
 }
+
+
 #contenedorContactos {
     background-color: #01c38e;
     color: #272727;
@@ -208,6 +210,5 @@ body {
         font-size: 6¿50px;
     }
 }
-
 
 

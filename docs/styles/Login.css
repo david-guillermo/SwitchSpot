@@ -77,30 +77,50 @@ display: grid;
 grid-template-columns: 15% 85%;
 padding: 0 0.4rem;
 position: relative;
+
+i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
 }
 
-.input-field i {
-text-align: center;
-line-height: 55px;
-color: #acacac;
-transition: 0.5s;
-font-size: 1.1rem;
+input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
 }
 
-.input-field input {
-background: none;
-outline: none;
-border: none;
-line-height: 1;
-font-weight: 600;
-font-size: 1.1rem;
-color: #333;
+input::placeholder {
+    color: #aaa;
+    font-weight: 500;
 }
 
-.input-field input::placeholder {
-color: #aaa;
-font-weight: 500;
+select{
+    width: 240px;
+    padding-left: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
 }
+}
+
+#cuadricula{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 10px;
+}
+
+
 
 .social-text {
 padding: 0.7rem 0;
@@ -134,7 +154,7 @@ border-color: #4481eb;
 
 .btn {
 width: 150px;
-background-color: #13144d;
+background-color: #5995fd;
 border: none;
 outline: none;
 height: 49px;
@@ -148,7 +168,7 @@ transition: 0.5s;
 }
 
 .btn:hover {
-background-color: #1a4288;
+background-color: #4d84e2;
 }
 .panels-container {
 position: absolute;
@@ -168,8 +188,7 @@ width: 2000px;
 top: -10%;
 right: 48%;
 transform: translateY(-50%);
-background: rgb(255,255,255);
-background: linear-gradient(344deg, rgba(255,255,255,1) 9%, rgba(153,255,229,1) 18%, rgba(139,247,225,1) 23%, rgba(20,175,187,1) 37%, rgba(14,64,240,1) 52%);
+background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
 transition: 1.8s ease-in-out;
 border-radius: 50%;
 z-index: 6;
@@ -399,3 +418,13 @@ form {
     left: 50%;
 }
 }
+
+
+
+
+
+
+
+
+
+

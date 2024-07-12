@@ -13,8 +13,4 @@ sign_in_btn.addEventListener("click", () => {
 let email = "";
 const emailRegex = /^[a-zA-Z0-9._]+@[a-zA-Z0-9._]+\.[a-zA-Z]+$/;
 
-if (emailRegex.test(email)) {
-    console.log("El correo electrónico es válido.");
-}else{
-    console.log("El correo electrónico no es válido.");
-};
+
